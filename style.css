@@ -143,7 +143,6 @@ area {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-
   padding: 50px;
   p {
     color: #eeeeee;
@@ -162,6 +161,9 @@ area {
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 1.2rem;
+    @media (max-width: 670px) {
+      margin-top: 20px;
+    }
   }
   a:visited {
     color: black;
@@ -170,6 +172,9 @@ area {
 .font {
   color: #eeeeee;
   line-height: 3rem;
+  @media (max-width: 670px) {
+    line-height: 2rem;
+  }
 }
 .desc-banner {
   background-color: #424242;

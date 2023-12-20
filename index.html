@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Mapa Cidade de Goiás</title>
 </head>
@@ -21,21 +22,21 @@
         <img src="./Images/mapa.png" class="img" alt="mapa da cidade de Goiás" usemap="#map">
 
         <map name="map">
-            <area shape="rect" coords="655,455,464,569" alt="Associação Beneficente de Santa Luzia" data-popup="#santa-luzia">
-            <area shape="rect" coords="796,731,634,831" alt="Quartel do XX Batalhão de Infantaria" data-popup="#quartel">
-            <area shape="rect" coords="461,386,303,488" alt="Sede própria do Instituto Federal de Goiás" data-popup="#if">
-            <area shape="rect" coords="654,289,475,436" alt="Lavanderia do Alto Santana" data-popup="#lavanderia">
-            <area shape="rect" coords="391,740,175,948" alt="Benzedeira, Paneleira e Doceira" data-popup="#benzederira">
-            <area shape="rect" coords="737,196,620,341" alt="Cortejo do Bloco Pilão de Prata" data-popup="#cortejo">
-            <area shape="rect" coords="577,1110,384,954" alt="Igreja Santa Rita" data-popup="#igreja-santa-rita">
-            <area shape="rect" coords="886,979,664,1086" alt="Museu das Bandeiras" data-popup="#museu">
-            <area shape="rect" coords="841,332,661,510" alt="Igreja Nossa Senhora do Rosário" data-popup="#igreja-nossa-senhora-rosário">
-            <area shape="rect" coords="803,830,610,973" alt="Chafariz de Cauda da Boa Morte" data-popup="#chafariz">
-            <area shape="rect" coords="776,578,575,682" alt="Mercado Municipal da Cidade de Goiás" data-popup="#mercado">
-            <area shape="rect" coords="689,1181,471,1141" alt="Serra Dourada" data-popup="#serra-dourada">
-            <area shape="rect" coords="368,535,286,720" alt="Rio Vermelho" data-popup="#rio-vermelho">
-            <area shape="poly" coords="379,313,377,322,379,330,381,337,388,339,395,336,403,332,386,307,392,302,401,299,407,296,413,292,418,287,425,284,431,280,437,276,442,271,448,267,454,264,462,260,468,254,476,250,483,243,488,238,496,234,505,231,512,226,519,221,526,216,534,213,542,210,548,208,554,206,562,206,573,202,583,203,590,208,592,216,588,222,416,326,429,319,444,315,456,310,468,303,482,295,494,290,506,283,522,275,535,262,546,254,564,247,575,240,586,234,558,252,530,268,515,282,502,288,475,301,464,308" alt="morro de santa barbara" data-popup="#patrimonio-natural">
-            <area shape="rect" coords="847,241,985,525" alt="Morro Dom Francisco" data-popup="#patrimonio-natural">
+            <area class="area" shape="rect" coords="655,455,464,569" alt="Associação Beneficente de Santa Luzia" data-popup="#santa-luzia">
+            <area class="area" shape="rect" coords="796,731,634,831" alt="Quartel do XX Batalhão de Infantaria" data-popup="#quartel">
+            <area class="area" shape="rect" coords="461,386,303,488" alt="Sede própria do Instituto Federal de Goiás" data-popup="#if">
+            <area class="area" shape="rect" coords="654,289,475,436" alt="Lavanderia do Alto Santana" data-popup="#lavanderia">
+            <area class="area" shape="rect" coords="391,740,175,948" alt="Benzedeira, Paneleira e Doceira" data-popup="#benzederira">
+            <area class="area" shape="rect" coords="737,196,620,341" alt="Cortejo do Bloco Pilão de Prata" data-popup="#cortejo">
+            <area class="area" shape="rect" coords="577,1110,384,954" alt="Igreja Santa Rita" data-popup="#igreja-santa-rita">
+            <area class="area" shape="rect" coords="886,979,664,1086" alt="Museu das Bandeiras" data-popup="#museu">
+            <area class="area" shape="rect" coords="841,332,661,510" alt="Igreja Nossa Senhora do Rosário" data-popup="#igreja-nossa-senhora-rosário">
+            <area class="area" shape="rect" coords="803,830,610,973" alt="Chafariz de Cauda da Boa Morte" data-popup="#chafariz">
+            <area class="area" shape="rect" coords="776,578,575,682" alt="Mercado Municipal da Cidade de Goiás" data-popup="#mercado">
+            <area class="area" shape="rect" coords="689,1181,471,1141" alt="Serra Dourada" data-popup="#serra-dourada">
+            <area class="area" shape="rect" coords="368,535,286,720" alt="Rio Vermelho" data-popup="#rio-vermelho">
+            <area class="area" shape="poly" coords="379,313,377,322,379,330,381,337,388,339,395,336,403,332,386,307,392,302,401,299,407,296,413,292,418,287,425,284,431,280,437,276,442,271,448,267,454,264,462,260,468,254,476,250,483,243,488,238,496,234,505,231,512,226,519,221,526,216,534,213,542,210,548,208,554,206,562,206,573,202,583,203,590,208,592,216,588,222,416,326,429,319,444,315,456,310,468,303,482,295,494,290,506,283,522,275,535,262,546,254,564,247,575,240,586,234,558,252,530,268,515,282,502,288,475,301,464,308" alt="morro de santa barbara" data-popup="#patrimonio-natural">
+            <area class="area" shape="rect" coords="847,241,985,525" alt="Morro Dom Francisco" data-popup="#patrimonio-natural">
         </map>
     </section>
     <!-- popups -->
@@ -158,22 +159,21 @@
     <!-- banner sobre o quiz -->
     <section class="quiz-banner">
         <div>
-            <h2 class="font">Agora é hora de testar o seu conhecimento!</h2>
-            <p>Participe do nosso Quiz!</p>
-            <p>Desafie-se agora e deixe a diversão começar! </p>
+            <h2 class="quiz-h2">Agora é hora de testar o seu conhecimento!</h2>
+            <p class="quiz-p">Participe do nosso Quiz!</p>
+            <p class="quiz-p">Desafie-se agora e deixe a diversão começar! </p>
         </div>
-        <a href="./quiz.html" target="_blank">QUIZ</a>
+        <a href="./quiz.html" class="quiz-a" target="_blank">QUIZ</a>
     </section>
     <!-- descricao -->
     <section class="desc-banner">
         <div class="desc-wrapper">
             <div>
-                <h2>Mapa Interativo da Cidade de Goiás</h2>
-                <p>Faz parte da cartilha <b>Patrimônio na Cidade de Goiás: um olhar além do edificado</b> que é um produto educacional vinculado à dissertação de mestrado intitulada: <b>Territórios dos saberes e fazeres na cidade de Goiás: A Educação Patrimonial como proposta de ensino no curso de Edificações do Instituto Federal de Goiás - IFG</b>. De autoria de Lorena Cristina Brito Moraes pelo Programa de Pós-Graduação em Estudos Culturais, Memória e Patrimônio da Universidade Estadual de Goiás</p>
+                <h2 class="desc-h2">Mapa Interativo da Cidade de Goiás</h2>
+                <p class="desc-p">Faz parte da cartilha <b>Patrimônio na Cidade de Goiás: um olhar além do edificado</b> que é um produto educacional vinculado à dissertação de mestrado intitulada: <b>Territórios dos saberes e fazeres na cidade de Goiás: A Educação Patrimonial como proposta de ensino no curso de Edificações do Instituto Federal de Goiás - IFG</b>. De autoria de Lorena Cristina Brito Moraes pelo Programa de Pós-Graduação em Estudos Culturais, Memória e Patrimônio da Universidade Estadual de Goiás</p>
             </div>
-            <img src="./Images/monumentos.webp" alt="monumentos da cidade de Goiás">
+            <img class="desc-img" src="./Images/monumentos.webp" alt="monumentos da cidade de Goiás">
         </div>
-
     </section>
     <!-- ropapé -->
     <footer>
